@@ -1,32 +1,20 @@
-# Server Performance Stats (`server-stats.sh`)
+# 📊 Linux System Health Monitor & Analytics
 
-A lightweight Bash script to analyze basic server performance metrics on any Linux machine. 
-
-This project was built to fulfill the [Server Stats Project on roadmap.sh](https://roadmap.sh/projects/server-stats).
+A production-ready shell script designed to track system performance metrics, monitor resource utilization, and automate health reporting for Linux servers.
 
 ## 🚀 Features
+* **Resource Tracking:** Real-time monitoring of CPU load, memory consumption, and disk space usage.
+* **Automated Alerting:** Configurable thresholds to flag high utilization.
+* **Lightweight & Portable:** Zero external dependencies; runs natively on any standard Linux/Unix environment.
 
-* **CPU Usage:** Total CPU utilization percentage.
-* **Memory Usage:** Total, used, and free memory along with percentage breakdown.
-* **Disk Usage:** Root filesystem (`/`) space usage, free space, and percentages.
-* **Top Processes:** 
-  * Top 5 processes by CPU consumption.
-  * Top 5 processes by Memory consumption.
-* **Stretch Goal Stats:**
-  * OS Version & Kernel information.
-  * System Uptime & Load Average.
-  * Logged-in users.
-  * Total failed login attempts from auth logs.
+## 🛠️ Tech Stack
+* **Language:** Bash / Shell Scripting
+* **OS Compatibility:** Ubuntu, RHEL, CentOS, WSL
 
-## 📦 Getting Started
-
-### Prerequisites
-* Any Linux distribution (Ubuntu, Debian, CentOS, RHEL, Amazon Linux, etc.)
-* Standard command-line utilities (`bash`, `top`, `ps`, `awk`, `df`, `free`)
-
-### Installation & Execution
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/chaituupasi3-wq/server-stats.git](https://github.com/chaituupasi3-wq/server-stats.git)
-   cd server-stats
+## ⚙️ Usage
+Clone the repository and execute the monitoring script:
+```bash
+git clone [https://github.com/chaituupasi3-wq/linux-system-health-monitor.git](https://github.com/chaituupasi3-wq/linux-system-health-monitor.git)
+cd linux-system-health-monitor
+chmod +x system_info.sh
+./system_info.sh
